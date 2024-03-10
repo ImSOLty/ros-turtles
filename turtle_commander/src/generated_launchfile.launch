@@ -1,0 +1,1199 @@
+<launch>
+    <arg name="main_turtle_name" default="turtle1" />
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle_simulator" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="first_turtle_handler" />
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle2_node" output="screen">
+        <param name="turtle_coordinates" value="2.5311 7.6417" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="$(arg main_turtle_name)" />
+        <param name="turtle_name" value="turtle2" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle3_node" output="screen">
+        <param name="turtle_coordinates" value="1.4685 5.5671" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle2" />
+        <param name="turtle_name" value="turtle3" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle4_node" output="screen">
+        <param name="turtle_coordinates" value="10.7591 .8910" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle3" />
+        <param name="turtle_name" value="turtle4" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle5_node" output="screen">
+        <param name="turtle_coordinates" value="4.2647 9.9583" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle4" />
+        <param name="turtle_name" value="turtle5" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle6_node" output="screen">
+        <param name="turtle_coordinates" value="5.7343 1.7061" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle5" />
+        <param name="turtle_name" value="turtle6" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle7_node" output="screen">
+        <param name="turtle_coordinates" value="8.1411 8.0201" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle6" />
+        <param name="turtle_name" value="turtle7" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle8_node" output="screen">
+        <param name="turtle_coordinates" value="3.4166 8.6339" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle7" />
+        <param name="turtle_name" value="turtle8" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle9_node" output="screen">
+        <param name="turtle_coordinates" value=".8448 9.4930" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle8" />
+        <param name="turtle_name" value="turtle9" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle10_node" output="screen">
+        <param name="turtle_coordinates" value="3.5915 9.0574" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle9" />
+        <param name="turtle_name" value="turtle10" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle11_node" output="screen">
+        <param name="turtle_coordinates" value=".8096 4.9720" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle10" />
+        <param name="turtle_name" value="turtle11" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle12_node" output="screen">
+        <param name="turtle_coordinates" value="2.2088 4.6343" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle11" />
+        <param name="turtle_name" value="turtle12" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle13_node" output="screen">
+        <param name="turtle_coordinates" value="5.4043 9.2972" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle12" />
+        <param name="turtle_name" value="turtle13" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle14_node" output="screen">
+        <param name="turtle_coordinates" value="1.1616 10.8053" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle13" />
+        <param name="turtle_name" value="turtle14" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle15_node" output="screen">
+        <param name="turtle_coordinates" value="2.8061 10.7393" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle14" />
+        <param name="turtle_name" value="turtle15" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle16_node" output="screen">
+        <param name="turtle_coordinates" value="2.1010 2.8336" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle15" />
+        <param name="turtle_name" value="turtle16" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle17_node" output="screen">
+        <param name="turtle_coordinates" value="3.5607 5.6562" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle16" />
+        <param name="turtle_name" value="turtle17" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle18_node" output="screen">
+        <param name="turtle_coordinates" value="1.7138 1.0307" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle17" />
+        <param name="turtle_name" value="turtle18" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle19_node" output="screen">
+        <param name="turtle_coordinates" value="7.0466 7.8133" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle18" />
+        <param name="turtle_name" value="turtle19" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle20_node" output="screen">
+        <param name="turtle_coordinates" value=".5643 2.0768" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle19" />
+        <param name="turtle_name" value="turtle20" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle21_node" output="screen">
+        <param name="turtle_coordinates" value="3.6806 4.0392" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle20" />
+        <param name="turtle_name" value="turtle21" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle22_node" output="screen">
+        <param name="turtle_coordinates" value="7.1896 9.4655" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle21" />
+        <param name="turtle_name" value="turtle22" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle23_node" output="screen">
+        <param name="turtle_coordinates" value="6.9993 .1617" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle22" />
+        <param name="turtle_name" value="turtle23" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle24_node" output="screen">
+        <param name="turtle_coordinates" value="4.5298 .5269" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle23" />
+        <param name="turtle_name" value="turtle24" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle25_node" output="screen">
+        <param name="turtle_coordinates" value="9.9990 7.0081" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle24" />
+        <param name="turtle_name" value="turtle25" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle26_node" output="screen">
+        <param name="turtle_coordinates" value="6.0632 2.7555" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle25" />
+        <param name="turtle_name" value="turtle26" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle27_node" output="screen">
+        <param name="turtle_coordinates" value="6.8893 .4851" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle26" />
+        <param name="turtle_name" value="turtle27" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle28_node" output="screen">
+        <param name="turtle_coordinates" value="8.2203 2.9095" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle27" />
+        <param name="turtle_name" value="turtle28" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle29_node" output="screen">
+        <param name="turtle_coordinates" value="1.2012 5.4120" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle28" />
+        <param name="turtle_name" value="turtle29" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle30_node" output="screen">
+        <param name="turtle_coordinates" value=".1056 9.7449" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle29" />
+        <param name="turtle_name" value="turtle30" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle31_node" output="screen">
+        <param name="turtle_coordinates" value=".5918 8.3479" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle30" />
+        <param name="turtle_name" value="turtle31" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle32_node" output="screen">
+        <param name="turtle_coordinates" value="3.2648 4.2625" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle31" />
+        <param name="turtle_name" value="turtle32" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle33_node" output="screen">
+        <param name="turtle_coordinates" value="7.1137 8.5272" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle32" />
+        <param name="turtle_name" value="turtle33" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle34_node" output="screen">
+        <param name="turtle_coordinates" value=".2013 5.9719" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle33" />
+        <param name="turtle_name" value="turtle34" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle35_node" output="screen">
+        <param name="turtle_coordinates" value="2.9139 5.1722" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle34" />
+        <param name="turtle_name" value="turtle35" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle36_node" output="screen">
+        <param name="turtle_coordinates" value="9.9990 5.0611" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle35" />
+        <param name="turtle_name" value="turtle36" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle37_node" output="screen">
+        <param name="turtle_coordinates" value="2.2759 10.1607" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle36" />
+        <param name="turtle_name" value="turtle37" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle38_node" output="screen">
+        <param name="turtle_coordinates" value="3.4969 .3817" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle37" />
+        <param name="turtle_name" value="turtle38" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle39_node" output="screen">
+        <param name="turtle_coordinates" value="2.2066 9.6723" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle38" />
+        <param name="turtle_name" value="turtle39" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle40_node" output="screen">
+        <param name="turtle_coordinates" value="3.9919 1.0890" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle39" />
+        <param name="turtle_name" value="turtle40" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle41_node" output="screen">
+        <param name="turtle_coordinates" value="1.6786 .3146" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle40" />
+        <param name="turtle_name" value="turtle41" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle42_node" output="screen">
+        <param name="turtle_coordinates" value="6.5868 10.5820" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle41" />
+        <param name="turtle_name" value="turtle42" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle43_node" output="screen">
+        <param name="turtle_coordinates" value="2.3804 3.6542" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle42" />
+        <param name="turtle_name" value="turtle43" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle44_node" output="screen">
+        <param name="turtle_coordinates" value="1.1176 9.6987" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle43" />
+        <param name="turtle_name" value="turtle44" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle45_node" output="screen">
+        <param name="turtle_coordinates" value="6.9135 1.3365" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle44" />
+        <param name="turtle_name" value="turtle45" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle46_node" output="screen">
+        <param name="turtle_coordinates" value=".6655 10.3323" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle45" />
+        <param name="turtle_name" value="turtle46" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle47_node" output="screen">
+        <param name="turtle_coordinates" value="2.0702 10.0507" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle46" />
+        <param name="turtle_name" value="turtle47" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle48_node" output="screen">
+        <param name="turtle_coordinates" value="6.6693 10.3730" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle47" />
+        <param name="turtle_name" value="turtle48" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle49_node" output="screen">
+        <param name="turtle_coordinates" value="1.3717 5.7827" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle48" />
+        <param name="turtle_name" value="turtle49" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle50_node" output="screen">
+        <param name="turtle_coordinates" value="1.4025 8.5448" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle49" />
+        <param name="turtle_name" value="turtle50" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle51_node" output="screen">
+        <param name="turtle_coordinates" value="1.1638 5.3262" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle50" />
+        <param name="turtle_name" value="turtle51" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle52_node" output="screen">
+        <param name="turtle_coordinates" value="1.9833 1.1198" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle51" />
+        <param name="turtle_name" value="turtle52" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle53_node" output="screen">
+        <param name="turtle_coordinates" value="10.4005 9.2059" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle52" />
+        <param name="turtle_name" value="turtle53" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle54_node" output="screen">
+        <param name="turtle_coordinates" value=".0066 2.3936" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle53" />
+        <param name="turtle_name" value="turtle54" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle55_node" output="screen">
+        <param name="turtle_coordinates" value="2.5850 2.2396" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle54" />
+        <param name="turtle_name" value="turtle55" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle56_node" output="screen">
+        <param name="turtle_coordinates" value="9.0761 7.0752" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle55" />
+        <param name="turtle_name" value="turtle56" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle57_node" output="screen">
+        <param name="turtle_coordinates" value=".6292 3.7961" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle56" />
+        <param name="turtle_name" value="turtle57" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle58_node" output="screen">
+        <param name="turtle_coordinates" value="9.4743 9.9143" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle57" />
+        <param name="turtle_name" value="turtle58" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle59_node" output="screen">
+        <param name="turtle_coordinates" value=".5511 3.9710" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle58" />
+        <param name="turtle_name" value="turtle59" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle60_node" output="screen">
+        <param name="turtle_coordinates" value="7.4052 7.5537" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle59" />
+        <param name="turtle_name" value="turtle60" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle61_node" output="screen">
+        <param name="turtle_coordinates" value="10.3587 5.2580" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle60" />
+        <param name="turtle_name" value="turtle61" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle62_node" output="screen">
+        <param name="turtle_coordinates" value="9.6085 1.3816" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle61" />
+        <param name="turtle_name" value="turtle62" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle63_node" output="screen">
+        <param name="turtle_coordinates" value="10.0309 .5467" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle62" />
+        <param name="turtle_name" value="turtle63" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle64_node" output="screen">
+        <param name="turtle_coordinates" value="8.0157 10.4049" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle63" />
+        <param name="turtle_name" value="turtle64" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle65_node" output="screen">
+        <param name="turtle_coordinates" value=".7964 8.7637" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle64" />
+        <param name="turtle_name" value="turtle65" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle66_node" output="screen">
+        <param name="turtle_coordinates" value=".3553 10.1013" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle65" />
+        <param name="turtle_name" value="turtle66" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle67_node" output="screen">
+        <param name="turtle_coordinates" value="4.7696 .0418" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle66" />
+        <param name="turtle_name" value="turtle67" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle68_node" output="screen">
+        <param name="turtle_coordinates" value=".0088 .5907" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle67" />
+        <param name="turtle_name" value="turtle68" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle69_node" output="screen">
+        <param name="turtle_coordinates" value="4.0997 1.3112" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle68" />
+        <param name="turtle_name" value="turtle69" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle70_node" output="screen">
+        <param name="turtle_coordinates" value="9.6965 10.1365" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle69" />
+        <param name="turtle_name" value="turtle70" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle71_node" output="screen">
+        <param name="turtle_coordinates" value="3.8346 6.0720" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle70" />
+        <param name="turtle_name" value="turtle71" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle72_node" output="screen">
+        <param name="turtle_coordinates" value="5.9147 2.7566" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle71" />
+        <param name="turtle_name" value="turtle72" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle73_node" output="screen">
+        <param name="turtle_coordinates" value="10.2685 7.5295" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle72" />
+        <param name="turtle_name" value="turtle73" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle74_node" output="screen">
+        <param name="turtle_coordinates" value="10.4918 8.6757" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle73" />
+        <param name="turtle_name" value="turtle74" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle75_node" output="screen">
+        <param name="turtle_coordinates" value="4.5903 10.8251" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle74" />
+        <param name="turtle_name" value="turtle75" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle76_node" output="screen">
+        <param name="turtle_coordinates" value="7.9156 3.7411" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle75" />
+        <param name="turtle_name" value="turtle76" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle77_node" output="screen">
+        <param name="turtle_coordinates" value=".8536 9.5832" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle76" />
+        <param name="turtle_name" value="turtle77" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle78_node" output="screen">
+        <param name="turtle_coordinates" value="5.2745 .8514" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle77" />
+        <param name="turtle_name" value="turtle78" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle79_node" output="screen">
+        <param name="turtle_coordinates" value="9.1311 1.9591" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle78" />
+        <param name="turtle_name" value="turtle79" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle80_node" output="screen">
+        <param name="turtle_coordinates" value="7.8012 6.2557" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle79" />
+        <param name="turtle_name" value="turtle80" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle81_node" output="screen">
+        <param name="turtle_coordinates" value="9.1322 .6820" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle80" />
+        <param name="turtle_name" value="turtle81" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle82_node" output="screen">
+        <param name="turtle_coordinates" value=".2200 1.2133" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle81" />
+        <param name="turtle_name" value="turtle82" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle83_node" output="screen">
+        <param name="turtle_coordinates" value=".1683 9.9572" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle82" />
+        <param name="turtle_name" value="turtle83" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle84_node" output="screen">
+        <param name="turtle_coordinates" value="3.3044 2.8567" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle83" />
+        <param name="turtle_name" value="turtle84" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle85_node" output="screen">
+        <param name="turtle_coordinates" value="1.9503 6.1798" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle84" />
+        <param name="turtle_name" value="turtle85" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle86_node" output="screen">
+        <param name="turtle_coordinates" value="10.3631 6.8321" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle85" />
+        <param name="turtle_name" value="turtle86" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle87_node" output="screen">
+        <param name="turtle_coordinates" value="4.1888 6.6429" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle86" />
+        <param name="turtle_name" value="turtle87" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle88_node" output="screen">
+        <param name="turtle_coordinates" value="5.0116 6.8585" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle87" />
+        <param name="turtle_name" value="turtle88" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle89_node" output="screen">
+        <param name="turtle_coordinates" value="10.5479 4.6838" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle88" />
+        <param name="turtle_name" value="turtle89" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle90_node" output="screen">
+        <param name="turtle_coordinates" value=".4455 9.0794" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle89" />
+        <param name="turtle_name" value="turtle90" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle91_node" output="screen">
+        <param name="turtle_coordinates" value="9.7042 7.3139" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle90" />
+        <param name="turtle_name" value="turtle91" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle92_node" output="screen">
+        <param name="turtle_coordinates" value="6.7232 4.8862" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle91" />
+        <param name="turtle_name" value="turtle92" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle93_node" output="screen">
+        <param name="turtle_coordinates" value="3.6498 2.0471" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle92" />
+        <param name="turtle_name" value="turtle93" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle94_node" output="screen">
+        <param name="turtle_coordinates" value="1.9932 .2849" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle93" />
+        <param name="turtle_name" value="turtle94" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle95_node" output="screen">
+        <param name="turtle_coordinates" value="9.9737 7.2061" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle94" />
+        <param name="turtle_name" value="turtle95" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle96_node" output="screen">
+        <param name="turtle_coordinates" value="6.0940 9.3687" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle95" />
+        <param name="turtle_name" value="turtle96" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle97_node" output="screen">
+        <param name="turtle_coordinates" value="3.9193 4.7707" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle96" />
+        <param name="turtle_name" value="turtle97" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle98_node" output="screen">
+        <param name="turtle_coordinates" value=".3124 6.5670" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle97" />
+        <param name="turtle_name" value="turtle98" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle99_node" output="screen">
+        <param name="turtle_coordinates" value="4.5705 5.4472" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle98" />
+        <param name="turtle_name" value="turtle99" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle100_node" output="screen">
+        <param name="turtle_coordinates" value="5.3680 6.3910" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle99" />
+        <param name="turtle_name" value="turtle100" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle101_node" output="screen">
+        <param name="turtle_coordinates" value=".5049 5.2030" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle100" />
+        <param name="turtle_name" value="turtle101" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle102_node" output="screen">
+        <param name="turtle_coordinates" value="3.8071 8.5481" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle101" />
+        <param name="turtle_name" value="turtle102" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle103_node" output="screen">
+        <param name="turtle_coordinates" value="7.0235 .5203" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle102" />
+        <param name="turtle_name" value="turtle103" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle104_node" output="screen">
+        <param name="turtle_coordinates" value="2.4266 1.4641" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle103" />
+        <param name="turtle_name" value="turtle104" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle105_node" output="screen">
+        <param name="turtle_coordinates" value="7.0114 9.1883" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle104" />
+        <param name="turtle_name" value="turtle105" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle106_node" output="screen">
+        <param name="turtle_coordinates" value="9.2796 2.9821" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle105" />
+        <param name="turtle_name" value="turtle106" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle107_node" output="screen">
+        <param name="turtle_coordinates" value="6.0247 7.2963" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle106" />
+        <param name="turtle_name" value="turtle107" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle108_node" output="screen">
+        <param name="turtle_coordinates" value="3.1647 .7139" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle107" />
+        <param name="turtle_name" value="turtle108" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle109_node" output="screen">
+        <param name="turtle_coordinates" value="7.6637 5.0886" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle108" />
+        <param name="turtle_name" value="turtle109" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle110_node" output="screen">
+        <param name="turtle_coordinates" value="4.8499 2.6433" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle109" />
+        <param name="turtle_name" value="turtle110" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle111_node" output="screen">
+        <param name="turtle_coordinates" value="3.1471 .2200" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle110" />
+        <param name="turtle_name" value="turtle111" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle112_node" output="screen">
+        <param name="turtle_coordinates" value="2.3749 6.2535" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle111" />
+        <param name="turtle_name" value="turtle112" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle113_node" output="screen">
+        <param name="turtle_coordinates" value="4.2317 10.5677" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle112" />
+        <param name="turtle_name" value="turtle113" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle114_node" output="screen">
+        <param name="turtle_coordinates" value="1.6203 2.4156" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle113" />
+        <param name="turtle_name" value="turtle114" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle115_node" output="screen">
+        <param name="turtle_coordinates" value="4.2790 5.7739" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle114" />
+        <param name="turtle_name" value="turtle115" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle116_node" output="screen">
+        <param name="turtle_coordinates" value=".7799 3.3297" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle115" />
+        <param name="turtle_name" value="turtle116" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle117_node" output="screen">
+        <param name="turtle_coordinates" value="10.6744 1.2331" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle116" />
+        <param name="turtle_name" value="turtle117" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle118_node" output="screen">
+        <param name="turtle_coordinates" value="1.3640 10.8009" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle117" />
+        <param name="turtle_name" value="turtle118" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle119_node" output="screen">
+        <param name="turtle_coordinates" value="2.6631 2.5839" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle118" />
+        <param name="turtle_name" value="turtle119" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle120_node" output="screen">
+        <param name="turtle_coordinates" value="7.5955 4.2911" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle119" />
+        <param name="turtle_name" value="turtle120" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle121_node" output="screen">
+        <param name="turtle_coordinates" value="3.5519 5.7717" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle120" />
+        <param name="turtle_name" value="turtle121" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle122_node" output="screen">
+        <param name="turtle_coordinates" value=".5247 7.0708" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle121" />
+        <param name="turtle_name" value="turtle122" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle123_node" output="screen">
+        <param name="turtle_coordinates" value="2.1582 9.4809" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle122" />
+        <param name="turtle_name" value="turtle123" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle124_node" output="screen">
+        <param name="turtle_coordinates" value="1.0769 10.7800" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle123" />
+        <param name="turtle_name" value="turtle124" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle125_node" output="screen">
+        <param name="turtle_coordinates" value=".7634 10.6084" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle124" />
+        <param name="turtle_name" value="turtle125" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle126_node" output="screen">
+        <param name="turtle_coordinates" value="1.3376 8.4722" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle125" />
+        <param name="turtle_name" value="turtle126" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle127_node" output="screen">
+        <param name="turtle_coordinates" value="6.0423 4.8532" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle126" />
+        <param name="turtle_name" value="turtle127" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle128_node" output="screen">
+        <param name="turtle_coordinates" value="7.8144 1.2892" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle127" />
+        <param name="turtle_name" value="turtle128" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle129_node" output="screen">
+        <param name="turtle_coordinates" value="9.8384 .6105" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle128" />
+        <param name="turtle_name" value="turtle129" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle130_node" output="screen">
+        <param name="turtle_coordinates" value="8.8781 9.8681" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle129" />
+        <param name="turtle_name" value="turtle130" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle131_node" output="screen">
+        <param name="turtle_coordinates" value="2.9535 4.3725" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle130" />
+        <param name="turtle_name" value="turtle131" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle132_node" output="screen">
+        <param name="turtle_coordinates" value="9.3511 5.4802" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle131" />
+        <param name="turtle_name" value="turtle132" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle133_node" output="screen">
+        <param name="turtle_coordinates" value="2.1219 1.3519" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle132" />
+        <param name="turtle_name" value="turtle133" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle134_node" output="screen">
+        <param name="turtle_coordinates" value="3.6630 7.1357" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle133" />
+        <param name="turtle_name" value="turtle134" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle135_node" output="screen">
+        <param name="turtle_coordinates" value="6.5076 3.3803" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle134" />
+        <param name="turtle_name" value="turtle135" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle136_node" output="screen">
+        <param name="turtle_coordinates" value="7.4481 2.0691" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle135" />
+        <param name="turtle_name" value="turtle136" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle137_node" output="screen">
+        <param name="turtle_coordinates" value="1.5224 9.0618" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle136" />
+        <param name="turtle_name" value="turtle137" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle138_node" output="screen">
+        <param name="turtle_coordinates" value="4.3868 5.5165" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle137" />
+        <param name="turtle_name" value="turtle138" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle139_node" output="screen">
+        <param name="turtle_coordinates" value="2.9898 4.4132" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle138" />
+        <param name="turtle_name" value="turtle139" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle140_node" output="screen">
+        <param name="turtle_coordinates" value="5.9972 2.2352" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle139" />
+        <param name="turtle_name" value="turtle140" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle141_node" output="screen">
+        <param name="turtle_coordinates" value="1.9547 1.5378" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle140" />
+        <param name="turtle_name" value="turtle141" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle142_node" output="screen">
+        <param name="turtle_coordinates" value="5.5451 1.0934" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle141" />
+        <param name="turtle_name" value="turtle142" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle143_node" output="screen">
+        <param name="turtle_coordinates" value="10.0837 .4004" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle142" />
+        <param name="turtle_name" value="turtle143" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle144_node" output="screen">
+        <param name="turtle_coordinates" value="9.3071 7.3788" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle143" />
+        <param name="turtle_name" value="turtle144" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle145_node" output="screen">
+        <param name="turtle_coordinates" value="5.0127 8.6680" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle144" />
+        <param name="turtle_name" value="turtle145" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle146_node" output="screen">
+        <param name="turtle_coordinates" value="10.6876 8.9870" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle145" />
+        <param name="turtle_name" value="turtle146" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle147_node" output="screen">
+        <param name="turtle_coordinates" value="1.3915 3.7664" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle146" />
+        <param name="turtle_name" value="turtle147" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle148_node" output="screen">
+        <param name="turtle_coordinates" value=".3718 9.2180" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle147" />
+        <param name="turtle_name" value="turtle148" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle149_node" output="screen">
+        <param name="turtle_coordinates" value="7.1401 3.0866" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle148" />
+        <param name="turtle_name" value="turtle149" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle150_node" output="screen">
+        <param name="turtle_coordinates" value="2.1065 7.1885" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle149" />
+        <param name="turtle_name" value="turtle150" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle151_node" output="screen">
+        <param name="turtle_coordinates" value="7.3898 7.3832" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle150" />
+        <param name="turtle_name" value="turtle151" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle152_node" output="screen">
+        <param name="turtle_coordinates" value="3.5915 10.3477" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle151" />
+        <param name="turtle_name" value="turtle152" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle153_node" output="screen">
+        <param name="turtle_coordinates" value="2.2594 6.1226" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle152" />
+        <param name="turtle_name" value="turtle153" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle154_node" output="screen">
+        <param name="turtle_coordinates" value="1.7116 .3443" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle153" />
+        <param name="turtle_name" value="turtle154" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle155_node" output="screen">
+        <param name="turtle_coordinates" value="5.1953 .4356" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle154" />
+        <param name="turtle_name" value="turtle155" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle156_node" output="screen">
+        <param name="turtle_coordinates" value=".0341 6.3162" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle155" />
+        <param name="turtle_name" value="turtle156" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle157_node" output="screen">
+        <param name="turtle_coordinates" value="9.2917 4.5078" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle156" />
+        <param name="turtle_name" value="turtle157" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle158_node" output="screen">
+        <param name="turtle_coordinates" value="10.8713 8.7549" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle157" />
+        <param name="turtle_name" value="turtle158" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle159_node" output="screen">
+        <param name="turtle_coordinates" value=".5203 3.7444" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle158" />
+        <param name="turtle_name" value="turtle159" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle160_node" output="screen">
+        <param name="turtle_coordinates" value="7.1302 10.8691" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle159" />
+        <param name="turtle_name" value="turtle160" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle161_node" output="screen">
+        <param name="turtle_coordinates" value="7.0972 9.4512" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle160" />
+        <param name="turtle_name" value="turtle161" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle162_node" output="screen">
+        <param name="turtle_coordinates" value="3.0371 7.5779" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle161" />
+        <param name="turtle_name" value="turtle162" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle163_node" output="screen">
+        <param name="turtle_coordinates" value="8.2984 6.6792" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle162" />
+        <param name="turtle_name" value="turtle163" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle164_node" output="screen">
+        <param name="turtle_coordinates" value=".6567 1.5631" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle163" />
+        <param name="turtle_name" value="turtle164" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle165_node" output="screen">
+        <param name="turtle_coordinates" value="7.2028 2.4827" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle164" />
+        <param name="turtle_name" value="turtle165" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle166_node" output="screen">
+        <param name="turtle_coordinates" value="9.7163 1.9987" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle165" />
+        <param name="turtle_name" value="turtle166" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle167_node" output="screen">
+        <param name="turtle_coordinates" value="7.6340 9.5942" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle166" />
+        <param name="turtle_name" value="turtle167" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle168_node" output="screen">
+        <param name="turtle_coordinates" value="1.4388 9.0882" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle167" />
+        <param name="turtle_name" value="turtle168" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle169_node" output="screen">
+        <param name="turtle_coordinates" value="6.1853 10.3169" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle168" />
+        <param name="turtle_name" value="turtle169" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle170_node" output="screen">
+        <param name="turtle_coordinates" value="1.6313 9.0409" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle169" />
+        <param name="turtle_name" value="turtle170" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle171_node" output="screen">
+        <param name="turtle_coordinates" value="2.2979 6.8827" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle170" />
+        <param name="turtle_name" value="turtle171" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle172_node" output="screen">
+        <param name="turtle_coordinates" value="2.2440 10.5369" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle171" />
+        <param name="turtle_name" value="turtle172" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle173_node" output="screen">
+        <param name="turtle_coordinates" value="10.1354 4.5936" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle172" />
+        <param name="turtle_name" value="turtle173" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle174_node" output="screen">
+        <param name="turtle_coordinates" value="10.8493 10.6381" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle173" />
+        <param name="turtle_name" value="turtle174" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle175_node" output="screen">
+        <param name="turtle_coordinates" value="2.0284 10.5842" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle174" />
+        <param name="turtle_name" value="turtle175" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle176_node" output="screen">
+        <param name="turtle_coordinates" value="4.8961 .7095" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle175" />
+        <param name="turtle_name" value="turtle176" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle177_node" output="screen">
+        <param name="turtle_coordinates" value="2.4838 4.0898" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle176" />
+        <param name="turtle_name" value="turtle177" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle178_node" output="screen">
+        <param name="turtle_coordinates" value="3.0162 7.9695" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle177" />
+        <param name="turtle_name" value="turtle178" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle179_node" output="screen">
+        <param name="turtle_coordinates" value="3.8247 5.0809" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle178" />
+        <param name="turtle_name" value="turtle179" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle180_node" output="screen">
+        <param name="turtle_coordinates" value="10.2883 9.6657" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle179" />
+        <param name="turtle_name" value="turtle180" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle181_node" output="screen">
+        <param name="turtle_coordinates" value="7.5691 6.1985" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle180" />
+        <param name="turtle_name" value="turtle181" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle182_node" output="screen">
+        <param name="turtle_coordinates" value="1.5268 7.5581" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle181" />
+        <param name="turtle_name" value="turtle182" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle183_node" output="screen">
+        <param name="turtle_coordinates" value="5.7948 .6633" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle182" />
+        <param name="turtle_name" value="turtle183" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle184_node" output="screen">
+        <param name="turtle_coordinates" value="1.7523 7.1390" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle183" />
+        <param name="turtle_name" value="turtle184" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle185_node" output="screen">
+        <param name="turtle_coordinates" value="5.9180 2.7522" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle184" />
+        <param name="turtle_name" value="turtle185" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle186_node" output="screen">
+        <param name="turtle_coordinates" value="1.7721 5.0776" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle185" />
+        <param name="turtle_name" value="turtle186" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle187_node" output="screen">
+        <param name="turtle_coordinates" value="7.2160 7.0092" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle186" />
+        <param name="turtle_name" value="turtle187" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle188_node" output="screen">
+        <param name="turtle_coordinates" value="4.2108 .3410" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle187" />
+        <param name="turtle_name" value="turtle188" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle189_node" output="screen">
+        <param name="turtle_coordinates" value=".8690 5.5011" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle188" />
+        <param name="turtle_name" value="turtle189" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle190_node" output="screen">
+        <param name="turtle_coordinates" value="1.3761 9.3115" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle189" />
+        <param name="turtle_name" value="turtle190" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle191_node" output="screen">
+        <param name="turtle_coordinates" value="6.6253 9.6976" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle190" />
+        <param name="turtle_name" value="turtle191" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle192_node" output="screen">
+        <param name="turtle_coordinates" value="10.8548 8.6746" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle191" />
+        <param name="turtle_name" value="turtle192" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle193_node" output="screen">
+        <param name="turtle_coordinates" value="5.0677 2.5377" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle192" />
+        <param name="turtle_name" value="turtle193" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle194_node" output="screen">
+        <param name="turtle_coordinates" value="9.1553 4.1668" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle193" />
+        <param name="turtle_name" value="turtle194" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle195_node" output="screen">
+        <param name="turtle_coordinates" value="9.0409 .6754" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle194" />
+        <param name="turtle_name" value="turtle195" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle196_node" output="screen">
+        <param name="turtle_coordinates" value="5.7783 7.0356" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle195" />
+        <param name="turtle_name" value="turtle196" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle197_node" output="screen">
+        <param name="turtle_coordinates" value="10.0045 .1826" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle196" />
+        <param name="turtle_name" value="turtle197" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle198_node" output="screen">
+        <param name="turtle_coordinates" value="10.7602 10.0947" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle197" />
+        <param name="turtle_name" value="turtle198" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle199_node" output="screen">
+        <param name="turtle_coordinates" value="6.0170 10.2784" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle198" />
+        <param name="turtle_name" value="turtle199" />
+    </node>
+    <node pkg="turtle_commander" type="turtle_commander_node.py" name="turtle200_node" output="screen">
+        <param name="turtle_coordinates" value="4.6629 8.1785" />
+        <param name="turtle_speed" value="1.5" />
+        <param name="turtle_target" value="turtle199" />
+        <param name="turtle_name" value="turtle200" />
+    </node>
+</launch>
