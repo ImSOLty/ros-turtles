@@ -16,7 +16,7 @@ function random_float_between() {
 
 
 output_file="generated_launchfile.launch"
-num_nodes=200
+num_nodes=5
 
 echo "<launch>" > "$output_file"
 echo "    <arg name=\"main_turtle_name\" default=\"turtle1\" />" >> "$output_file"

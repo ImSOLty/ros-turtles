@@ -5,7 +5,7 @@ import time
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 from turtlesim.srv import Spawn
-from commander.turtle_commander import TurtleCommander, TurtlePosition
+from turtle_commander import TurtleCommander, TurtlePosition
 
 
 class TurtleCommanderNode:
